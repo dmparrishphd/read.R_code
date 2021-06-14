@@ -1,10 +1,35 @@
 read.R_code
 ===========
 
-as stated in Writing R Extensions (Sect. 1.1.5):
+Read R code from a file.
+
+More specifically, open and read a file in text mode assumed to be in UTF-8 encoding and assumed to contain R code.
+
+Usage
+-----
+
+    read.R_code(file)
+    
+| Argument | Description |
+| -------: | :---------- |
+|     file | a character string describing the file from which to read |
+
+Value
+-----
+
+A data frame of three columns.
+There is one row for each line in the file.
+
+The first two columns report the results of basic tests of each line: 1)
+whether it is composed only of the characters suggested by
+_Writing R Extensions_ (Sect. 1.1.5):
 
 > Only ASCII characters (and the control characters tab,
 > formfeed, LF and CR) should be used in code files.
+
+and 2) whether condition 1 is met AND formfeed and tab are absent.
+
+The third column contains the text read.
 
 Example
 -------
