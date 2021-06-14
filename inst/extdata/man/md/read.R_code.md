@@ -30,14 +30,3 @@ _Writing R Extensions_ (Sect. 1.1.5):
 and 2) whether condition 1 is met AND formfeed and tab are absent.
 
 The third column contains the text read.
-
-Example
--------
-
-    PATH <- "~/lib/read.R_code-WORM"
-    ENV <- source ( paste0 (
-        PATH ,
-        "/inst/extdata/R/env.read.R_code/1.R"
-    ) ) [[ 1 ]] ( PATH )
-
-    ENV $ read.R_code ( "~/R/R.R" )
