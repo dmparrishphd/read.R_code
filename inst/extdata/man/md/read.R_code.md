@@ -28,7 +28,7 @@ Such a line of text might be called "nice" text, since all characters are human-
 
 The third column contains the text read.
 
-_Writing R Extensions_ (Sect. 1.1.5) read, in part:
+_Writing R Extensions_ (Sect. 1.1.5) reads, in part:
 
 > Only ASCII characters (and the control characters tab,
 > formfeed, LF and CR) should be used in code files.
