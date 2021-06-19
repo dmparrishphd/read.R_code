@@ -12,7 +12,7 @@ Example
         what = source ( paste0 (
             "~/read.R_code-WORM" ,
             "/inst/extdata/R/env.read.R_code/1.R" )
-            ) [[ 1 ]] ( "~/read.R_code-WORM" )
+            ) [[ 1 ]] ( "~/read.R_code-WORM" ) )
     read.R_code ( "~/R/R.R" )
 
     # VERBOSE EXAMPLE
